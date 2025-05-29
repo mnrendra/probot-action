@@ -29,10 +29,6 @@ jobs:
       - name: Clean Install
         run: npm ci
 
-      # Build Source Code
-      - name: Build Source Code
-        run: npm run build
-
       # Probot Action
       - name: Probot Action
         uses: mnrendra/probot-action@946031c836b65a4e2d6b995744d6cc84497f2562
