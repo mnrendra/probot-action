@@ -32,5 +32,5 @@ jobs:
       # Probot Action
       - name: Probot Action
         uses: mnrendra/probot-action@73dc02c4f610eefab7e16c0085b1297d98616d0f
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

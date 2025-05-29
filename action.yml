@@ -1,5 +1,5 @@
 name: "Probot Action"
-description: "PA Probot app."
+description: "A Probot app."
 runs:
   using: "node20"
-  main: "dist/index.js"
+  main: "./dist/index.js"
