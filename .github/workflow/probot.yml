@@ -1,0 +1,14 @@
+name: Say Hello World
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  sayHelloWorld:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mnrendra/probot-action@946031c836b65a4e2d6b995744d6cc84497f2562
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
