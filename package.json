@@ -12,7 +12,7 @@
     "probot-app"
   ],
   "scripts": {
-    "build": "rm -rf dist && ncc build index.js -o dist/index.js",
+    "build": "rm -rf dist && ncc build index.js -o dist",
     "start": "probot run ./index.js",
     "test": "node --test"
   },
