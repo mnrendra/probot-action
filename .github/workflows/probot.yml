@@ -19,18 +19,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      # Setup Node
-      - name: Setup Node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version: lts/*
+      # # Setup Node
+      # - name: Setup Node
+      #   uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+      #   with:
+      #     node-version: lts/*
 
-      # Clean Install
-      - name: Clean Install
-        run: npm ci
+      # # Clean Install
+      # - name: Clean Install
+      #   run: npm ci
 
       # Probot Action
       - name: Probot Action
-        uses: mnrendra/probot-action@946031c836b65a4e2d6b995744d6cc84497f2562
+        uses: mnrendra/probot-action@73dc02c4f610eefab7e16c0085b1297d98616d0f
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
