@@ -12,11 +12,13 @@
     "probot-app"
   ],
   "scripts": {
+    "build": "rm -rf ./dist && ncc build ./index.js -o ./dist/index.js",
     "start": "probot run ./index.js",
     "test": "node --test"
   },
   "dependencies": {
     "@probot/adapter-github-actions": "^4.0.3",
+    "@vercel/ncc": "^0.38.3",
     "probot": "^13.0.1"
   },
   "devDependencies": {
@@ -25,6 +27,5 @@
   },
   "engines": {
     "node": ">= 18"
-  },
-  "type": "module"
+  }
 }
